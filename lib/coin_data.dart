@@ -1,3 +1,5 @@
+import 'package:bitcoin_ticker/networking.dart';
+
 const List<String> currenciesList = [
   'AUD',
   'BRL',
@@ -28,4 +30,10 @@ const List<String> cryptoList = [
   'LTC',
 ];
 
-class CoinData {}
+class CoinData {
+  NetworkHelper net = NetworkHelper();
+
+  Future getCurrency() async {
+    //var data = await net.getData(crypto, fiat);
+  }
+}
